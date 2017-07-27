@@ -68,10 +68,10 @@ body, html {
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
+    cursor:pointer;
 }
 
 .caption {
-    cursor:pointer;
     position: absolute;
     left: 0;
     top: 50%;
@@ -89,7 +89,7 @@ span .firstCaption#link {
   transition: 0.5s;
 }
 span .firstCaption#link:after {
-  content: '\00bb';
+  content: '\21E3';
   position: absolute;
   opacity: 0;
   top: 0;
