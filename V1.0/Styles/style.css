@@ -1,0 +1,102 @@
+
+	/* Appliqué à toute la page */
+#bloc_page
+{
+	width: 1000px;
+	margin: auto;
+}
+
+@font-face
+{
+	font-family: 'PoliceTitre';
+	src: url(polices/AlexBrush-Regular.ttf);
+}
+
+body
+{
+	font-family: 'Trebuchet MS', Arial, sans-serif;
+	color: #1D4851;
+}
+
+	/* Titres */
+h1
+{
+	font-family: Dayrom, serif;
+	text-align: center;
+	font-size: 3em;
+}
+
+h2
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	width: 1000px;
+	border-bottom: 1px solid #6D071A;
+	color: #6D071A;
+}
+
+h3
+{
+	color: #6D071A;
+	font-style: italic;
+	font-weight: lighter;
+	margin-left: 20px;
+	text-decoration: underline;
+}
+
+	/* Liens */
+a
+{
+	text-decoration: underline;
+	color : #6D071A;
+	font-weight: bold;
+}
+
+	/* Navigation */
+
+#div_nav
+{
+	text-align: center;
+	border-top: solid #6D071A 1px;
+	border-bottom: solid #6D071A 1px;
+	margin-bottom: 15px;
+}
+
+nav
+{
+	display: inline-block;
+	width: 800px;
+	text-align: center
+}
+
+nav li
+{
+	display: inline-block;
+	margin-right: 35px;  /* A changer (demandé 10px dans l'énoncé ) */
+}
+
+nav a
+{
+	font-family: Dayrom, serif;
+	font-size: 1.5em;
+	text-decoration: none;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+nav a:hover
+{
+	border-bottom: 3px solid #1D4851;
+}
+
+
+/* Footer */
+footer
+{
+	display: inline-block;
+	width: 100%;
+	text-align: center;
+	margin-top: 20px;
+	border-top: 1px solid #1D4851;
+}

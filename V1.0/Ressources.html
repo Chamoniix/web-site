@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Entete HTML-->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Styles/style.css"/>
+        <link rel="stylesheet" href="Styles/styleRessources.css"/>
+        <title>MaPageWeb</title>
+   </head>
+
+	<body>
+		<!-- Corps HTML-->
+
+		<div id="bloc_page"> <!-- pour centrer tous les éléments de la page -->
+
+		<!-- Entete du site : -->
+			<header>
+				<h1>Ressources</h1>
+
+				<div id="div_nav">
+					<nav>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="CV.html">CV</a></li>
+							<li><a href="Ressources.html">Ressources</a></li>
+              <li><a href="Projets.html">Projets</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div id="Telechargements">
+				<h2>Téléchargements</h2>
+				<ul>
+					<li><a href="http://jeremy.lardon.free.fr/projet/cheatsheet_CSS.pdf" target="_blank">Ouverture d'un fichier de type <em>PDF</em> dans un nouvel onglet</a></li>
+					<li><a href="http://jeremy.lardon.free.fr/projet/cheatsheet_CSS.pdf" download="cheatsheetCSS">Téléchargement d'un fichier de type <em>PDF</em></a></li>
+					<li><a href="http://jeremy.lardon.free.fr/projet/projet.zip">Téléchargement d'un fichier de type <em>ZIP</em></a></li>
+					<li><a href="figures/ID.jpg" download="Photo ID">Téléchargement d'un fichier <em>local</em></a></li>
+					<li><a href="figures/ID.jpg" target="_blank">Ouverture d'un fichier <em>local</em> dans un nouvel onglet</a></li>
+				</ul>
+			</div>
+
+			<div id="AnimFlash">
+				<h2>Animation Flash</h2>
+        <h3>Annimation flash</h3>
+				<div id="Anim">
+				      <embed src="figures/radioactivite_quotidien.swf" quality="high" width="600" height="500">
+				</div>
+				<p id="AnimExpliq">
+					Cliquez sue la flèche en bas à droite de l'animation pour commencer l'explication à propos de la radioactivité dans la vie quotidienne !
+				</p>
+			</div>
+
+      <h3>Fichier gif</h3>
+      <img alt="bucheron" src="figures/bucheron.gif" id="bucheron"></img>
+
+
+
+
+      <!-- Exemple de code (relativement long) -->
+			<div id="ExpCode">
+
+			<h2>Exemples de code</h2>
+
+      <h3>Code en html : </h3>
+      <form action="show">
+        <fieldset>
+          <legend>Code : </legend>
+          <div>
+            <label for="zone">Exemple de présentation utilisant reveal.js : </label>
+            <textarea id="zone" rows="1" cols="1">
+<!-- Exemple de code : -->
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Présentation Hugo - Stage</title>
+        <link rel="icon" href="asset/favicon.ico" />
+        <!--[if IE]>
+            <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon" />
+        <![endif]-->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/orange.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+
+
+        </script>
+        <style type="text/css">
+            .left, p{
+                text-align:left
+            }
+
+            .reveal .serif {
+                font-family: serif;
+            }
+
+            .reveal .no-list:before {
+                content :'';
+            }
+
+            .reveal .slide-number {
+                font-size : 0.4em;
+                right: 52px;
+                bottom: 57px;
+            }
+
+        </style>
+        <!--[if lt IE 9]>
+            <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+<!-- ### DEBUT DU SQUELETTE ######################################################################-->
+        <!-- Pour afficher les slides il faut au moins une div.reveal et une div.slides -->
+        <div class="reveal">
+            <div class="slides">
+
+
+                <section>
+                    <h2>Présentation</h2>
+                    <h3>Hugo GYBELS</h3>
+                    Stage paramétrage - Coll Dump Fichier
+                </section>
+
+
+                <section class="sommaire">
+                    <h2>Sommaire</h2>
+
+                    <ol>
+                        <li class="fragment">Contexte</li>
+                        <li class="fragment">L'outil Coll Dump Fichier</li>
+                        <li class="fragment">Travaux réalisés</li>
+                        <li class="fragment">Enseignements</li>
+                    </ol>
+                </section>
+
+
+                <!-- ***************Contexte************* -->
+
+
+                <section>
+                    <h2>Contexte</h2>
+                    <br>
+                    <h3>Etudes</h3>
+                    <br>
+						DUT GEII -  IUT Saint-Etienne<br>
+                        <span class="fragment">Ecole d'ingénieur - Telecom Saint-Etienne</span>
+                </section>
+
+
+
+                <section>
+					<section>
+						<h2>Orange</h2>
+						<figure class="fragment">
+							<img src="figures/Chiffres_significatifs.PNG" alt="" />
+							<figcaption>
+									Chiffres significatifs
+							</figcaption>
+						</figure>
+					</section>
+
+					<section>
+						<h3>La Direction Réseau (DR)</h3>
+						Exploitation, supervision et expertise des réeaux.<br><br>
+
+						<div class="fragment">
+							Direction <b>Comptage</b> : <br>
+							<ul>
+								<li class="fragment">Collecter les données du réseau</li>
+								<li class="fragment">Mettre en forme les données</li>
+								<li class="fragment">Les redistribuer (facturation, statistique, etc.)</li>
+							</ul>
+						</div>
+					</section>
+
+					<section>
+						<h3>Platine :</h3>
+							<figure class="fragment">
+							<img src="figures/Schema_platine.PNG" alt="" />
+							<figcaption>
+									Fonctionnement Platine
+							</figcaption>
+
+					</section>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
+
+            </textarea>
+          </div>
+        </fieldset>
+      </form>
+
+        <h3>Code quelconque (text préformaté) : </h3>
+        <pre class="stretch">
+          <code data-trim class="c++ coffeescript">
+  //Décodage du DC :
+
+     nb_champs = tab_champs->RenvoieTabChamps().size();
+     EnteteBER * entete_ber = new EnteteBER(p_ligneNUM);
+     for(int i = 0; i  nb_champs; i++){
+
+         tag = tab_champs->RenvoieTabChamps()[i]->RenvoieTag();
+
+         if(tag == entete_ber->RenvoieTag()){  /* si le tag recherché est trouvé */
+
+             /* on récupère les éléments du champ BER */
+             nom_champ = tab_champs->RenvoieTabChamps()[i]->RenvoieNomChamp();
+             decodage = tab_champs->RenvoieTabChamps()[i]->RenvoieDecodage();
+             decalage = tab_champs->RenvoieTabChamps()[i]->RenvoieDecalage();
+             tab_suivant = tab_champs->RenvoieTabChamps()[i]->RenvoieTabChamps();
+             flag = tab_champs->RenvoieTabChamps()[i]->RenvoieFlag();
+
+         }
+
+
+         ...
+          </code>
+       </pre>
+
+			</div>
+
+
+
+			<footer>
+			     <p> Copyright © 2017 GYBELS Hugo - Tous droits reservés</p>
+			</footer>
+		</div>
+	</body>
+</html>

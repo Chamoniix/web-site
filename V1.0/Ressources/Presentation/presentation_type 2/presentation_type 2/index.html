@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>[Votre Titre]</title>
+		<link rel="icon" href="asset/favicon.ico" />
+		<!--[if IE]>
+			<link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon" />
+		<![endif]-->
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/orange2.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+
+
+		</script>
+		<style type="text/css">
+			.left, p{
+				text-align:left
+			}
+		</style>
+		<!--[if lt IE 9]>
+			<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+<!-- ### DEBUT DU SQUELETTE ######################################################################-->		
+		<!-- Pour afficher les slides il faut au moins une div.reveal et une div.slides -->
+		<div class="reveal">
+			<div class="slides">
+				<!-- Une slide (PowerPoint) est une section -->
+				<section>
+					<!-- Les différents niveaux de titre -->
+					<h1>Titre niveau 1</h1>
+					<h2>Titre niveau 2</h2>
+					<h3>Titre niveau 3</h3>
+					<h4>Titre niveau 4</h4>
+					
+					<div id="date"><!-- Laisser vide --> </div>
+				</section>
+				<section>
+					<!-- Une liste -->
+					<ul>
+						<li>élement de liste 1</li>
+						<li>élement de liste 2</li>
+						<li>élement de liste 3</li>
+						<li>élement de liste 4</li>
+					</ul>
+					<hr>
+					<p><a href="#/8">Lien vers la dernière slide</a></p>
+				</section>
+				
+				<!-- Pour rajouter une slide de transition noire, il suffit de 
+					 rajouter la classe "black" -->
+				<section class="white">
+					<!-- Ici on affiche quelques élements qui s'affichent au clic -->
+					<h1>titre 1 sur fond blanc</h1>
+					<h2 class="fragment roll-in">titre 2</h2>
+					<h3 class="fragment roll-in">titre 3</h3>
+					<ul>
+						<li class="fragment roll-in">li 1</li>
+						<li class="fragment roll-in">li 2</li>
+					</ul>
+					<p><a href="#" class="fragment roll-in">une ancre</a></p>
+				</section>
+
+				<section data-markdown>
+				<!-- 
+					 Un exemple d'utilisation du langage Markdown
+					 Documentations ici:
+						-> http://daringfireball.net/projects/markdown/syntax
+						-> https://help.github.com/articles/github-flavored-markdown/ 
+				-->
+
+					<script type="text/template">
+						#Titre niveau 1
+						##Titre niveau 2
+						###Titre niveau 3
+						<!-- Une liste sans nombre -->
+						
+						* li 1-1
+							* li 2-1
+							* li 2-2
+						* li 1-2
+					</script>
+				</section>
+
+				<section>
+					<figure>
+						<img src="asset/logo.jpg" alt="Image Orange" width="60%">
+						<figcaption>Image d'exemple</figcaption>
+					</figure>
+				</section>
+
+				<section data-markdown>
+					<script type="text/template">
+						<!-- Une liste numérique -->
+
+						Texte monospace -> `Markdown`
+
+						Portion de code :
+						```
+							echo "hello World";
+						```
+
+						1. li 3-1
+						1. li 3-2
+						1. li 3-3
+
+						Un [lien](http://www.google.fr "Un lien vers google")
+					</script>
+				</section>
+
+				<!-- Exemple d'une section écrite en markdown mais non interprétée -->
+				<section>
+					<script type="text/template">
+						#Je ne m'affiche pas
+
+						<!-- ' //<- sert à ne pas gâcher la coloration syntaxique -->
+					</script>
+				</section>
+	
+				<section>
+					<h1>A vous de jouer !</h1>
+				</section>
+
+				<section>
+					<h1>Merci !</h1>
+				</section>
+
+			</div>
+		</div>
+<!-- ### FIN DU SQUELETTE ######################################################################-->
+		
+
+		<div class="logo"><!-- Laisser vide --></div>
+	<!-- Scripts -->
+		<script src="lib/js/head.min.js"></script>
+
+		<script type="text/javascript">
+			var element = document.querySelectorAll("section.white")
+			if(element)
+				for(var i = 0; i<element.length; i++)
+					element[i].dataset.background = "#FFFFFF";
+		</script>
+		
+		<script src="js/reveal.js"></script>
+
+		<script>
+			
+			
+			// Pour comprendre cette configuration:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: false,
+				progress: true,
+				history: true,
+				center: false,
+				backgroundTransition: 'slide',
+				//NE PAS TOUCHER LE THEME !!!!
+				theme: "orange2",
+				transition: "linear",
+				transitionSpeed: "fast",
+				mouseWheel: true,
+				slideNumber: true,
+				width:1024,
+				height: 750,
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+			//Script pour l'ajout de la date dans la présentation
+			Reveal.addEventListener ( 'ready', function(){
+				var element = document.getElementById("date");
+				var date = new Date();
+
+				var months = ["janvier", "février", "mars", "avril", "mai", "juin", 
+				"juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+
+				var year = date.getFullYear();
+				var month = date.getMonth();
+				var day = date.getDate();
+
+				element.innerHTML = day + " " + months[month] + " " + year;
+
+				if( !Reveal.isFirstSlide() && !Reveal.isLastSlide() ){
+					document.getElementsByClassName("logo")[0].style.display = "none";
+				} else {
+					document.getElementsByClassName("logo")[0].style.display = "block";
+				}
+
+				var slideNumberElement = document.querySelector('.slide-number'); 
+				if(Reveal.getCurrentSlide().dataset.background === "#FFFFFF"){
+					slideNumberElement.style.color = "#000000";
+				} else {
+					slideNumberElement.style.color   = "#FFFFFF";
+				}
+			});
+
+			Reveal.addEventListener( 'slidechanged', function(event){
+				if( !Reveal.isFirstSlide() && !Reveal.isLastSlide() ){
+					document.getElementsByClassName("logo")[0].style.display = "none";
+				} else {
+					document.getElementsByClassName("logo")[0].style.display = "block";
+				}
+
+				var slideNumberElement = document.querySelector('.slide-number'); 
+				if(event.currentSlide.dataset.background === "#FFFFFF"){
+					slideNumberElement.style.color = "#000000";
+				} else {
+					slideNumberElement.style.color   = "#FFFFFF";
+				}
+			});
+		</script>
+	<!-- /Scripts -->
+	</body>
+</html>

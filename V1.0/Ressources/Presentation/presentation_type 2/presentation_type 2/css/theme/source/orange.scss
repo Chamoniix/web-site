@@ -1,0 +1,163 @@
+/* 
+ * Thème pour des présentations Reveal.js utilisant la charte graphique Orange
+ * On peut retrouver l'ensemble de la charte sur
+ * http://http://www.brand.orange.com/pages/download.php?ref=229559&ext=pdf 
+ * Copyright (C) 2015 - Orange DERS
+ */
+
+// Default mixins and settings -----------------
+@import "../template/mixins";
+@import "../template/settings";
+// ---------------------------------------------
+
+
+@font-face{
+	font-family: 'Helvetica 35 Thin';
+	src: url('../../lib/font/HelvNeue35_Cyr.ttf') format('truetype');
+	font-style: normal;
+}
+
+@font-face{
+	font-family: "Helvetica 65 Medium";
+	src: url('../../lib/font/HelvNeue65_Cyr.ttf') format('truetype');
+	font-style:normal;
+}
+
+@font-face{
+	font-family: "Helvetica 75";
+	src:url('../../lib/font/HelvNeue75_Cyr.ttf') format('truetype');
+}
+
+$mainFont: 'Helvetica 65 Medium', "Arial", sans-serif;
+$headingFont: 'Helvetica 35 Thin', sans-serif;
+
+$headingLineHeight: 0.9em;
+$headingLetterSpacing: 0.02em;
+$headingTextTransform: intial;
+
+
+// Defining Orange Colors ------------------
+$orange: #FF6600;
+$black: #000000;
+$white: #FFFFFF;
+$grey: #8F8F8F;
+$grey2: #CCCCCC;
+$grey3: #999999;
+$grey4: #666666;
+// -----------------------------------------
+$backgroundColor: $white;
+$mainColor: #000;
+$linkColor: $orange;
+$linkColorHover: lighten($linkColor,20%);
+// -----------------------------------------
+
+
+
+@import "../template/theme.scss";
+
+// Overwriting some instructions -----------
+.reveal{
+
+	h1,h2{
+		font-family: $headingFont;
+		color: $orange;
+		text-shadow: none;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6{
+		font-family: $mainFont;
+		color: $black;
+	}
+}
+// -----------------------------------------
+
+$logoSize: 100px;
+
+.logo{
+	background: $orange url('data:image/png;base64,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') top left no-repeat ;
+	position:fixed;
+	height: $logoSize;
+	width: $logoSize;
+	top:$logoSize/4;
+	left: $logoSize/4;
+}
+
+#date, #auteur{
+	font-family: "Helvetica 75", "Arial", sans-serif;
+	position:fixed;
+	bottom: 54px;
+	z-index: 31;
+	font-size: 0.9em;
+	color: $linkColor;
+	opacity: 0.7;
+}
+
+#date{
+	left: 100px;
+}
+
+#auteur{
+	left:45%;
+}
+
+.reveal .black{
+	color:$white;
+	section,p,h3,h4,li,div{
+		color:$white;
+	}
+}
+
+.reveal{
+	
+	section img{
+		border:none;
+	}
+
+	ul, li ul{
+		list-style-type:none;
+	}
+	ul li:before{
+		content: "■  ";
+		font-family:"Arial Black";
+		color: $orange;
+	}
+
+	li ul li:before{
+		content: "- ";
+		color: $black;
+	}
+
+	h4{
+	font-size: 1em; 
+	}
+
+	h3{
+	font-size:1.6em;
+	}
+	h2{
+	font-size:2.6;
+	}
+	h1{
+	font-size:3.2em;
+	}
+
+	.black{
+		color:$white;
+		section,p,h3,h4,li,div,figcaption{
+			color:$white;
+		}
+		h1,h2{
+			color:$orange;
+		}
+		li ul li:before{
+			color: $white;
+		}
+	}
+
+	.slide-number{
+		opacity:1;
+	}
+}

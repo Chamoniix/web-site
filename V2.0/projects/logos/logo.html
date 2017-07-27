@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="styleLogo.css">
+  <link rel="stylesheet" href="..\..\modules\chartist\dist\chartist.min.css">
+</head>
+
+
+<body>
+<!--  Navbar -->
+  <ul class="main-navigation">
+    <li><a href="..\..\home.html">Home</a></li>
+    <li id="second"><a href="#news">News</a></li>
+    <li><a href="#">Week Reviews</a>
+      <ul>
+        <li><a href="ressources/week_reviews/week1.md.html">OSISoft internsip - Week 1</a></li>
+        <li><a href="ressources/week_reviews/week2.md.html">OSISoft internsip - Week 2</a></li>
+        <li><a href="ressources/week_reviews/week3.md.html">OSISoft internsip - Week 3</a></li>
+        <li><a href="ressources/week_reviews/week4.md.html">OSISoft internsip - Week 4</a></li>
+        <li><a href="ressources/week_reviews/week5.md.html">OSISoft internsip - Week 5</a></li>
+        <li><a href="ressources/week_reviews/week6.md.html">OSISoft internsip - Week 6</a></li>
+      </ul>
+    </li>
+    <li><a href="#contact">Contact</a></li>
+    <li style="float:right"><a class="active" href="#about">About</a></li>
+  </ul>
+
+<!--  body -->
+<section id = "corps">
+
+<h1>My logos</h1>
+
+
+<form onsubmit="vote1();" class="vote">
+<input type="image" name='logo1' value=1 src=logos\1.png class="logo">
+</form>
+<form onsubmit="vote2();" class="vote">
+<input type="image" name='logo2' value=2 src=logos\2.png class="logo">
+</form>
+<form onsubmit="vote3();" class="vote">
+<input type="image" name='logo3' value=3 src=logos\3.png class="logo">
+</form>
+<form onsubmit="vote4();" class="vote">
+<input type="image" name='logo4' value=4 src=logos\4.png class="logo">
+</form>
+<form onsubmit="vote5();" class="vote">
+<input type="image" name='logo5' value=5 src=logos\5.png class="logo">
+</form>
+
+</section>
+
+<div class="ct-chart" id="chart"></div>
+
+<p>
+Logo 1 : <span id="panelScore1"></span>
+Logo 2 : <span id="panelScore2"></span>
+Logo 3 : <span id="panelScore3"></span>
+Logo 4 : <span id="panelScore4"></span>
+Logo 5 : <span id="panelScore5"></span>
+</p>
+
+
+<script src="../../modules/chartist/dist/chartist.js"></script>
+<script src="vote.js"></script>
+<script src="..\..\modules\chartist\dist\chartist.min.js"></script>
+</body>
+</html>

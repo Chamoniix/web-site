@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="fr">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Présentation Hugo - Stage</title>
+        <link rel="icon" href="asset/favicon.ico" />
+        <!--[if IE]>
+            <link rel="shortcut icon" href="asset/favicon.ico" type="image/x-icon" />
+        <![endif]-->
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" href="css/reveal.min.css">
+        <link rel="stylesheet" href="css/theme/orange.css" id="theme">
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        <!-- If the query includes 'print-pdf', include the PDF print sheet -->
+        <script>
+            if( window.location.search.match( /print-pdf/gi ) ) {
+                var link = document.createElement( 'link' );
+                link.rel = 'stylesheet';
+                link.type = 'text/css';
+                link.href = 'css/print/pdf.css';
+                document.getElementsByTagName( 'head' )[0].appendChild( link );
+            }
+
+
+        </script>
+        <style type="text/css">
+            .left, p{
+                text-align:left
+            }
+            
+            .reveal .serif {
+                font-family: serif;
+            }
+            
+            .reveal .no-list:before {
+                content :'';
+            }
+            
+            .reveal .slide-number {
+                font-size : 0.4em;
+                right: 52px;
+                bottom: 57px;
+            }   
+            
+        </style>
+        <!--[if lt IE 9]>
+            <script src="lib/js/html5shiv.js"></script>
+        <![endif]-->
+    </head>
+
+    <body>
+<!-- ### DEBUT DU SQUELETTE ######################################################################-->       
+        <!-- Pour afficher les slides il faut au moins une div.reveal et une div.slides -->
+        <div class="reveal">
+            <div class="slides">
+            
+            
+                <section>
+                    <h1>Présentation</h1>
+                    <h3>Hugo GYBELS</h3>    
+                    Stage paramétrage - Coll Dump Fichier
+                </section>
+                
+                
+                <section class="sommaire">
+                    <h2>Sommaire</h2>
+                    
+                    <ol>
+                        <li class="fragment">Contexte</li>
+                        <li class="fragment">L'outil Coll Dump Fichier</li>
+                        <li class="fragment">Travaux réalisés</li>
+                        <li class="fragment">Enseignements</li>
+                    </ol>
+                </section>
+                
+                
+                <!-- ***************Contexte************* -->
+                
+                
+                <section>
+                    <h2>Contexte</h2>
+                    <br>
+                    <h3>Etudes</h3>
+                    <br>
+						DUT GEII -  IUT Saint-Etienne<br>
+                        <span class="fragment">Ecole d'ingénieur - Telecom Saint-Etienne</span>
+                </section>
+
+                
+                
+                <section>
+					<section>
+						<h2>Orange</h2>
+						<figure class="fragment">
+							<img src="figures/Chiffres_significatifs.PNG" alt="" />
+							<figcaption>
+									Chiffres significatifs
+							</figcaption>
+						</figure>
+					</section>
+					
+					<section>
+						<h3>La Direction Réseau (DR)</h3>
+						Exploitation, supervision et expertise des réeaux.<br><br>
+						
+						<div class="fragment">
+							Direction <b>Comptage</b> : <br>
+							<ul>
+								<li class="fragment">Collecter les données du réseau</li>
+								<li class="fragment">Mettre en forme les données</li>
+								<li class="fragment">Les redistribuer (facturation, statistique, etc.)</li>
+							</ul>
+						</div>
+					</section>
+					
+					<section>
+						<h3>Platine :</h3>
+							<figure class="fragment">
+							<img src="figures/Schema_platine.PNG" alt="" />
+							<figcaption>
+									Fonctionnement Platine
+							</figcaption>
+						
+					</section>
+					
+					
+					<section>
+						<h3>Direction Comptage :</h3> <br>
+						
+						<ul>
+							<li class="fragment" data-fragment-index="1">Exploitation</li>
+							<li class="fragment" data-fragment-index="2">Expertise</li>
+							<li class="fragment" data-fragment-index="3"><span class="fragment highlight-red">Paramétrage</span></li>
+						</ul>
+						
+					</section>
+					
+					
+                </section>
+                
+                <!-- ***********Coll Dump Fichier************* -->
+				<section>
+					
+					<section>
+						<h2>Coll Dump Fichier</h2>
+						<figure class="fragment">
+							<img src="figures/Schema_platine_collecte.PNG" alt="" />
+							<figcaption>
+								Emplacement de Coll Dump Fichier
+							</figcaption>
+						</figure>
+					</section>
+					
+					
+					<section>
+						<h3>Utilisation</h3>
+						<video src="videos/demo_CDF.mp4" controls></video>
+					</section>
+					
+					
+					<section>
+						<figure>
+							<img src="figures/fonctionnement_CDF.PNG" alt="" />
+							<figcaption>
+								Fonctionnement de Coll Dump Fichier
+							</figcaption>
+						</figure>
+					</section>					
+					
+					
+					<section>
+						<h3>Missions du stage</h3>
+						<div class="fragment">
+						<br>
+						Passage au C++ :  
+						<br><br>            
+						<ul>
+							<li>Perte de performance
+							<li>Beaucoup de développeurs mais peu de documentation
+						</ul>
+						</div>
+					</section>
+
+				
+				</section>
+                <!-- ***********Travaux Réalisés********* -->
+                
+                
+                <section>
+                
+                    <section>
+                        <h2>Travaux Réalisés</h2>
+                    </section>
+                    <section>
+                        <h3 class="left">1- Optimisation de l'outil :</h3>
+                        <br>
+                        <div>Localiser la perte de performances</div>
+                        <br>
+                        <ul>
+                            <li class="fragment">Scripts linux : &nbsp <img src="figures/resultats_obtenus_script.png"  style="float: right"/></li>
+							<li class="fragment" style="clear: right; ">Commande time &nbsp: &nbsp <img src="figures/resultats_obtenus_time.png" style="float: right"/></li>
+                        </ul><br>
+						
+                    </section>
+					
+					<section>
+					<ul>
+						<li>Bibliothèque <em>ctime</em> :</li>
+                    </ul>
+					<figure class="fragment">
+						<img src="figures/biblio_ctime.PNG" />
+                           <figcaption>
+                               Exemple d'utilisation de la bibliothèque <em>ctime</em>
+                           </figcaption>
+                       </figure>
+					</section>
+                    
+                    
+                    
+                    
+                    <section>
+                        Après avoir adapté cet algo aux différentes parties du code, j'ai obtenu les résultats ci dessous :
+                        <figure>
+                            <img src="figures/test_mesure.PNG" alt="753" width="" height="229.5">
+                        </figure>
+                    
+                        => Lecture csv OK.
+                    </section>
+                    
+                </section>
+                
+                
+                <section>
+                    
+                    <section>
+                        <h4>Codes redondants</h4>
+                        <br>
+                        <ul>
+                            <li class="fragment no-list" data-fragment-index="1"> <img src="figures/code_lecture_ori.PNG" alt="">
+                            <br> <br>
+                            <li  class="fragment no-list" data-fragment-index="2"> <img src="figures/code_lecture.PNG" alt="">
+                        </ul>
+                    </section>
+                    
+                    
+                    
+                    <section>
+                    <h4 style="text-align: left">Dans le décodage :</h4>
+                        <pre class="stretch">
+                        <code data-trim class="c++ coffeescript">
+//Décodage du DC :
+
+    nb_champs = tab_champs->RenvoieTabChamps().size();
+    EnteteBER * entete_ber = new EnteteBER(p_ligneNUM);
+    for(int i = 0; i < nb_champs; i++){  
+
+        tag = tab_champs->RenvoieTabChamps()[i]->RenvoieTag();
+
+        if(tag == entete_ber->RenvoieTag()){  /* si le tag recherché est trouvé */
+        
+            /* on récupère les éléments du champ BER */
+            nom_champ = tab_champs->RenvoieTabChamps()[i]->RenvoieNomChamp();
+            decodage = tab_champs->RenvoieTabChamps()[i]->RenvoieDecodage();
+            decalage = tab_champs->RenvoieTabChamps()[i]->RenvoieDecalage();
+            tab_suivant = tab_champs->RenvoieTabChamps()[i]->RenvoieTabChamps();
+            flag = tab_champs->RenvoieTabChamps()[i]->RenvoieFlag();
+                
+        }
+                
+                
+        ...
+                        </code>
+                        </pre>
+                    
+                    </section>
+                    
+                    
+                    
+                    <section>
+                        <pre class="stretch">
+                        <code data-trim class="c++ coffeescript">
+    //Décodage du DC :
+
+    vector < ChampBER *> champs = tab_champs->RenvoieTabChamps();
+                            
+    nb_champs = champs.size();
+    int tag_entete = entete_ber->RenvoieTag();
+    EnteteBER * entete_ber = new EnteteBER(p_ligneNUM);
+
+    for(int i = 0; i < nb_champs; i++){
+
+        tag = champs[i] -> RenvoieTag();
+        if(tag == tag_entete){  /* si le tag recherché est trouvé */
+                
+            /* on récupère les éléments du champ BER */
+            nom_champ = champs[i]->RenvoieNomChamp();
+            decodage = champs[i]->RenvoieDecodage();
+            decalage = champs[i]->RenvoieDecalage();
+            tab_suivant = champs[i]->RenvoieTabChamps();
+            flag = champs[i]->RenvoieFlag();
+
+        }
+
+    ...
+                                    
+                        </code>
+                        </pre>
+                    
+                    </section>
+                </section>
+        
+                <section>
+                <h2>Resultats Obtenus</h2><br>
+				<b>50% du temps d'exécution</b><br><br>
+				<span class="fragment">Objectif n°1 atteint.</span>
+				
+                </section>
+    
+                
+                <section>
+                
+                    <section>
+                    <h3 style="text-align:left;">2- Ecriture de la documentation : </h3><br><br>
+					<div class="fragment">
+						<li>Une documentation "utilisateurs"
+						<br><br>
+						<ul>
+							<li>Présentation
+							<li>Utilisation
+							<li>Fonctionnement
+							<li>Maintenance
+						</ul>
+					</div>
+					</section>
+                    
+                    
+                    <section>
+                    <figure>
+                        <img src="figures/doc_latex.PNG" alt="">
+                    </figure>   
+                    </section>
+                    
+                    
+                </section>
+                
+                
+                <section>
+                    <section>
+                    
+                    <li>Une documentation technique, un format différent :<br><br>
+                    
+                    <span class="fragment highlight-blue">Doxygen</span>
+                    </section>
+                    
+                    <section>
+                    <figure>
+                        <img src="figures/doxygen.PNG" alt="">
+                    </figure>
+                    </section>
+                </section>
+                
+                
+                <!-- ***************Enseignements*********** -->
+                <section>   
+                    <section>
+                    <h1>Enseignements</h1>
+                    
+                    <ul>
+                        <br>
+                        <li class="fragment">Interaction fichiers C++</li>
+						<li class="fragment">Gestion de configuration</li>
+                        <li class="fragment">Nouveaux logiciels :
+                            <ul>
+                                <li>Nouvel IDE</li>
+                                <li>Déboger gdb</li>
+                                <li>Fuites mémoires valgrind</li>
+                            </ul>
+                        </li>
+                        <li class="fragment">HTML et CSS</li>
+                        <li  class="fragment">Rapport : <span class="serif">LaTeX</span>, documentation : Doxygen,<br> présentation : Reveal.js</li>
+                    </ul>
+                    
+                    </section>
+                    
+					
+				<section>
+				<h1>Apports Personnels</h1><br><br>
+			
+				<ul class="fragment">
+					<li>Connaissance du monde de l'entreprise</li>
+					<li>Travail en équipe</li>
+					<li>Communication</li>
+					<li>Autonomie</li>
+					<li>Organisation</li>
+				</ul>
+								
+                </section>
+                
+				<section>
+				<figure>
+					<img src="figures/Planning.PNG" alt="diagramme de GANTT" />
+					<figcaption>Diagramme de GANTT</figcaption>
+				</figure>
+				</section>
+				
+                </section>
+				
+				
+				
+                <section>
+                    <h1>Merci !</h1>
+                </section>
+                
+
+            </div>
+        </div>
+<!-- ### FIN DU SQUELETTE ######################################################################-->
+        
+
+        <div class="logo"><!-- Laisser vide --></div>
+        <div id="auteur"> Hugo GYBELS </div>
+        <div id="date"></div>
+    <!-- Scripts -->
+        <script src="lib/js/head.min.js"></script>
+
+        <script type="text/javascript">
+            var element = document.querySelectorAll("section.white")
+            if(element)
+                for(var i = 0; i<element.length; i++)
+                    element[i].dataset.background = "#FFFFFF";
+        </script>
+        
+        <script src="js/setFigs.js"></script>
+        <script src="js/reveal.js"></script>
+
+        <script>
+            
+            
+            // Pour comprendre cette configuration:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                backgroundTransition: 'slide',
+                transition: "linear",
+                transitionSpeed: "fast",
+                mouseWheel: true,
+                slideNumber: true,
+                width:1024,
+                height: 750,
+                loop: false,
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+
+            //Script pour l'ajout de la date dans la présentation
+            Reveal.addEventListener ( 'ready', function(){
+                var element = document.getElementById("date");
+                var date = new Date();
+
+                var months = ["janvier", "février", "mars", "avril", "mai", "juin", 
+                "juillet", "août", "septembre", "octobre", "novembre", "décembre"];
+
+                var year = date.getFullYear();
+                var month = date.getMonth();
+                var day = date.getDate();
+
+                element.innerHTML = day + " " + months[month] + " " + year;
+
+                if( !Reveal.isFirstSlide() && !Reveal.isLastSlide() ){
+                    document.getElementsByClassName("logo")[0].style.display = "none";
+                } else {
+                    document.getElementsByClassName("logo")[0].style.display = "block";
+                }
+
+            });
+
+            Reveal.addEventListener( 'slidechanged', function(event){
+                if( !Reveal.isFirstSlide() && !Reveal.isLastSlide() ){
+                    document.getElementsByClassName("logo")[0].style.display = "none";
+                } else {
+                    document.getElementsByClassName("logo")[0].style.display = "block";
+                }
+            });
+        </script>
+    <!-- /Scripts -->
+
+    </body>
+</html>

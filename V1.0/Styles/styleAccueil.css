@@ -1,0 +1,112 @@
+	/* Bannière image télécom */
+#banniere_image
+{
+	margin-top: 15px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+	height: 319px;
+	background: url('../figures/entete.jpg') no-repeat;
+}
+
+/* Article et aside */
+
+article, aside
+{
+	display: inline-block;
+	vertical-align: top;
+	text-align: justify;
+}
+
+article
+{
+	width: 700px;
+	margin-right: 20px;
+	overflow: auto;
+}
+
+aside
+{
+	width: 230px;
+	background-color: #7F7F7F;
+	color: #F5F5DC;
+	border-radius: 5px;
+	padding: 10px;
+	font-size: 1.1em;
+}
+
+aside h3
+{
+	font-family: Dayrom, serif;
+	font-weight: normal;
+	text-transform: uppercase;
+	color: #F5F5DC;
+}
+
+article h2
+{
+	width: 700px;
+}
+
+article p
+{
+	text-align: justify;
+	font-size: 1.2em;
+}
+
+em
+{
+	font-weight: bold;
+}
+
+#photo_id
+{
+	text-align: center;
+}
+
+#photo_id img
+{
+	width: 160px;
+}
+
+/* Contact */
+
+#ContactForm
+{
+	width: 800px;
+	margin: auto;
+}
+
+#Contact{
+	padding-left: 220px;
+}
+
+.cssform p{
+	width: 50%;
+	clear: left;
+	margin: 0;
+	padding: 5px 0 8px 0;
+	padding-left: 155px; /*width of left column containing the label elements*/
+	border-top: 1px dashed gray;
+	height: 1%;
+}
+
+.cssform label{
+font-weight: bold;
+float: left;
+margin-left: -155px; /*width of left column*/
+width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+}
+
+.cssform textarea{
+	width: 250px;
+	height: 150px;
+}
+
+/*.threepxfix class below:
+Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
+to account for 3 pixel bug: http://www.positioniseverything.net/explorer/threepxtest.html
+*/
+
+* html .threepxfix{
+	margin-left: 3px;
+}

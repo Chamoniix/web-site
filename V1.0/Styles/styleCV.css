@@ -1,0 +1,107 @@
+/* Style CV CSS */
+p, #Competence div
+{
+	font-size: 1.2em;
+}
+
+/* Bandeau */
+#photoID
+{
+	width: 145px;
+	border: 2px solid black;
+}
+
+#Bandeau_CV
+{
+	background: #7F7F7F;
+	color: white;
+}
+
+#Bandeau_CV section
+{
+	vertical-align: middle;
+	display: inline-block;
+	margin-right: 0px;
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-bottom: 10px;
+}
+
+#Bandeau_CV h2
+{
+	color: #F5F5DC;
+	width: auto;
+	border: none;
+	font-weight: bold;
+	font-size: 2em;
+}
+
+#Bandeau_CV h3
+{
+	width: auto;
+	color: #F5F5DC;
+	text-decoration: none;
+	font-size: 2em;
+	margin-left: 0px;
+	margin-right: 20px;
+}
+
+#date
+{
+	margin-left: 65px;
+}
+
+/* Formation et Experiences Profésionnelles */
+.Date_Lieu
+{
+	vertical-align: top;
+	font-style: italic;
+	width: 25%;
+}
+
+.Post
+{
+	width: 65%;
+}
+
+#Formations p
+{
+	display: inline-block;
+}
+#ExpPro p
+{
+	display: inline-block;
+}
+
+#Triple_cursus
+{
+	margin-left: 30%;
+	margin-top: 0;
+}
+
+/* Compétences */
+#Competences div
+{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+	font-size: 1.1em;
+}
+
+#Competences #info
+{
+	margin-right: 60px;
+}
+
+/* Centres d'interets */
+#centreInt p
+{
+	display: inline-block;
+	width: 45%;
+}
+
+#centreInt em
+{
+	font-weight: bold;
+	text-decoration: underline;
+}

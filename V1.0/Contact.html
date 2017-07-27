@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Entete HTML-->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Styles/style.css"/>
+        <link rel="stylesheet" href="Styles/styleAccueil.css"/>
+        <link rel="stylesheet" href="Styles/styleRessources.css"/>
+        <title>MaPageWeb</title>
+   </head>
+
+	<body>
+		<!-- Corps HTML-->
+
+		<div id="bloc_page"> <!-- pour centrer tous les éléments de la page -->
+
+		<!-- Entete du site : -->
+			<header>
+				<h1>Contact</h1>
+
+				<div id="div_nav">
+					<nav>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="CV.html">CV</a></li>
+							<li><a href="Ressources.html">Ressources</a></li>
+              <li><a href="Projets.html">Projets</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+      <div id="Contact">
+  			<form id="ContactForm" class="cssform" action="post">
+
+  				<p>
+  					<label for="user">Nom :</label>
+  					<input type="text" id="user" value="" />
+  				</p>
+
+  				<p>
+  					<label for="emailaddress">Email :</label>
+  					<input type="text" id="emailaddress" value="" />
+  				</p>
+
+  				<p>
+  					<label for="comments">Message :</label>
+  					<textarea id="comments" rows="5" cols="25"></textarea>
+  				</p>
+
+  				<p>
+  					<label for="comments">Sexe :</label>
+  					Homme :<input type="radio" name="sex" />
+  					Femme :<input type="radio" name="sex" />
+  				</p>
+
+  				<p>
+  					<div style="margin-left: 150px; margin-bottom: 10px;">
+  						<input type="submit" value="Envoyer" />
+  					</div>
+
+
+  			</form>
+
+    </div>
+			<footer>
+				<p> Copyright © 2017 GYBELS Hugo - Tous droits reservés</p>
+			</footer>
+		</div>
+	</body>
+</html>

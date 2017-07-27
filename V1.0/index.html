@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <!-- Entete HTML-->
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="Styles/style.css"/>
+        <link rel="stylesheet" href="Styles/styleAccueil.css"/>
+        <title>MaPageWeb</title>
+   </head>
+
+	<body>
+		<!-- Corps HTML-->
+
+		<div id="bloc_page"> <!-- pour centrer tous les éléments de la page -->
+
+		<!-- Entete du site : -->
+			<header>
+				<h1>Hugo Gybels</h1>
+
+				<img id="banniere_image" src="figures/telecom.jpg" alt="entête du site">
+
+
+
+				<div id="div_nav">
+					<nav>
+						<ul>
+							<li><a href="index.html">Accueil</a></li>
+							<li><a href="CV.html">CV</a></li>
+							<li><a href="Ressources.html">Ressources</a></li>
+              <li><a href="Projets.html">Projets</a></li>
+							<li><a href="Contact.html">Contact</a></li>
+						</ul>
+					</nav>
+				</div>
+
+			</header>
+
+			<!-- Corps du site : -->
+			<section>
+
+				<article>
+					<h2>Présentation</h2>
+          <h3>Moi en quelques mots</h3>
+					<p>
+						Bonjour, je m'appel Hugo GYBELS. J'ai 21 ans et je suis en école d'ingénieur à télécom Saint-Etienne. Je suis passionné par toutes les matières informatiques et j'envisage d'orienter mon projet proféssionnel vers ce domaine. Ceci explique ma spécialisation en <em>Informatique, télécoms et réseaux</em>.
+					</p>
+
+          <h3>Présentation de ma page web</h3>
+					<p>
+						Vous pourrez trouver sur cette page plus d'information à mon sujet. Vous pouvez parcourir mon Cv, les ressources qui m'ont été utiles ainsi que certains de mes projets. J'ai appris beaucoup de choses pendant ma formation et eu l'occasion de réaliser des travaux. En effet, j'ai eu une formation à la fois théorique car j'ai fais une prépa intégrée dans laquelle j'ai fais beaucoup de maths, physique, traitement du signal et autre; mais aussi une formation technique car j'ai fais un DUT Génie Electrique et Informatique Industriel avant d'intégré le cursus ingénieur de mon école. J'ai réalisé des projets de recherche comme des projet de construction électronique que vous pouvez retrouver dans l'onglet <a href="Projets.html">projets</a>.
+					</p>
+
+          <h3>En conclusion</h3>
+					<p>
+						Cette page web est mon premier projet web. J'espère qu'il vous plaira et que vous trouverez tout ce que vous recherchez. N'hésitez pas à me contacter via l'onglet <a href="Contact.html">contact</a> pour plus d'informations ou pour une éventuelle collaboration.
+					</p>
+
+				</article>
+
+				<aside>
+					<h3>A propos de moi</h3>
+					<p id="photo_id"><img src="figures/ID.jpg" alt="ma photo d'id" /></p>
+					<p>Laissez moi me présenter :  je m'appel Hugo, j'ai 21 ans et je suis fan de nombreuses choses comme le sport (trésorier du Bureau des sorts de mon école), la musique ou encore les voyages.</p>
+					<p>Je vous laisse parcourir ce site si vous voulez en apprendre plus sur moi et sur ce que j'ai réalisé.</p>
+				</aside>
+
+			</section>
+
+
+      <h2>Contact</h2>
+			<section id ="Contact">
+
+				<form id="myform" class="cssform" action="post">
+
+					<p>
+						<label for="user">Nom :</label>
+						<input type="text" id="user" value="" />
+					</p>
+
+					<p>
+						<label for="emailaddress">Email :</label>
+						<input type="text" id="emailaddress" value="" />
+					</p>
+
+					<p>
+						<label for="comments">Message :</label>
+						<textarea id="comments" rows="5" cols="25"></textarea>
+					</p>
+
+					<p>
+						<label for="comments">Sexe :</label>
+						Homme :<input type="radio" name="sex" />
+						Femme :<input type="radio" name="sex" />
+					</p>
+
+					<p>
+						<div style="margin-left: 150px; margin-bottom: 10px;">
+							<input type="submit" value="Envoyer" />
+						</div>
+
+				</form>
+			</section>
+
+			<footer>
+				<p> Copyright © 2017 GYBELS Hugo - Tous droits reservés</p>
+			</footer>
+
+
+
+		</div>
+
+
+	</body>
+
+
+
+</html>

@@ -1,0 +1,113 @@
+body, html {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 "Lato", sans-serif;
+  color: #777;
+  margin: 0;
+}
+@media only screen and (max-device-width: 1024px) {
+    .bg {
+        background-attachment: scroll;
+    }
+}
+
+.bg {
+  position: relative;
+  opacity: 0.65;
+
+  /* Center and scale the image nicely */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#imgUn {
+  /* Full height */
+  min-height: 100%;
+  /* The image used */
+  background-image: url("homeNY.png");
+}
+
+#imgDeux {
+  background-image: url("_temp/Breakfast.png");
+  min-height: 400px;
+}
+
+#imgTrois {
+  background-image: url("_temp/forestbridge.jpg");
+  min-height: 400px;
+}
+
+#imgLast {
+  background-image: url("homeNY.png");
+  min-height: 400px;
+}
+
+#comment {
+  color: #777;
+  background-color:white;
+  text-align:center;
+  padding:50px 80px;
+  text-align: justify;
+}
+
+.caption span.firstCaption {
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+.caption span.border {
+    background-color:transparent;
+    font-size:25px;
+    color: #f7f7f7;
+    cursor: pointer;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+.caption {
+    cursor:pointer;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+}
+
+span {
+  text-decoration: none;
+  transition: all 0.5s;
+
+}
+span .firstCaption#link {
+  position: relative;
+  transition: 0.5s;
+}
+span .firstCaption#link:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+  margin-top: 7px;
+}
+
+span:hover .firstCaption#link {
+  padding-right: 25px;
+}
+
+span:hover .firstCaption#link:after {
+  opacity: 1;
+  right: 0;
+}
+
+.border:hover {
+  -webkit-box-shadow: 0 0 10px #fff;
+        box-shadow: 0 0 10px #fff;
+}
