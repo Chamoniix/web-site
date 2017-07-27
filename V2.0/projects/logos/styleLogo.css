@@ -107,19 +107,12 @@ ul ul ul {
   border-style: solid;
   border-color : #80cbc4;
 }
-img {
-  margin: 5px;
-  width: 140px;
-  height: 140px;
-}
+
 .vote {
   display: inline-block;
   width: 10%;
   margin-right: 60px;
 }
-
-
-
 
 #chart {
   margin-top: 100px;
