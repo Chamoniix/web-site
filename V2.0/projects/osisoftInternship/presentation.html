@@ -4,11 +4,57 @@
   <meta charset="UTF-8">
   <meta name="author" content="Hugo Gybels">
   <title>Hugo Gybels - OSISoft</title>
-  <link rel="stylesheet" href="styleOsi.css">
+  <style>
+  body, html {
+    width:95%;
+    font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  }
+aside {
+  width: 20%;
+  float:right;
+}
+aside img {
+  max-width:100%;
+  margin:50px;
+}
+p {
+  text-align: justify;
+  line-height: 1.7;
+  font-size: 1.4em;
+  width: 65%;
+  margin: 30px;
+}
+
+h1 {
+  width: 65%;
+  margin: 30px;
+  font-size: 2.6em;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  font-weight: 300;
+  line-height: 1.1;
+  border-bottom: 1px solid gray;
+}
+  </style>
 </head>
 <body>
 
+<aside>
+  <img src="logo.jpg" />
+  <img src="logoSt.png" />
+  <img src="logoKrb.jpg" />
+</aside>
+<h1>Osisoft Iternship</h1>
 
+<p>
+   I did my 10 weeks internship in Germany (Frankfurt) in the company OSISoft. I was hired in the development team. I was working on their PI System.
+</p>
+<p>
+  My project was about the communication between an ODBC client, a "translating server", and a SQL server. To accomplish this connection, I had to configure a double-hop scenario which was using GSS-api from Kerberos MIT release for authentication. Indeed, the translating server is using the client credentials to connect to the SQL server so a delegation needed to be configured. This configuration was already done but their observed a delay of 10 seconds for every connection on windows clients that they didn't have on linux clients. My project was to fix this delay.
+</p>
+<p>
+  You can here find an overview of each of my weeks during this internship such as my repport resuming my work on this project.
+</p>
 
 </body>
 </html>

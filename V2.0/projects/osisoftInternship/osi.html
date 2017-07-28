@@ -10,6 +10,7 @@
 
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a onclick="changeFrame('presentation.html')">Presentation</a>
   <a onclick="changeFrame('week_reviews/week1.md.html')">Week 1</a>
   <a onclick="changeFrame('week_reviews/week2.md.html')">Week 2</a>
   <a onclick="changeFrame('week_reviews/week3.md.html')">Week 3</a>
@@ -24,7 +25,7 @@
 </div>
 
 <div id="display">
-  <iframe src='presentation.html' id="frame" xscrolling="no">
+  <iframe src='presentation.html' id="frame">
     <p>
       your browser do not support iframe
     </p>
@@ -38,15 +39,15 @@ function changeFrame(frame) {
 }
 
 function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
-    document.getElementById("display").style.width = "83%";
+    document.getElementById("mySidenav").style.width = "20%";
+    document.getElementById("main").style.marginLeft = "20%";
+    document.getElementById("display").style.width = "75%";
 }
 
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
-    document.getElementById("display").style.width = "96%";
+    document.getElementById("display").style.width = "94%";
 }
 </script>
 

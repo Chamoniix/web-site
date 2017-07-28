@@ -59,6 +59,7 @@ html, body {
 #main {
   vertical-align: top;
     height: 100%;
+    width:1.5%;
     display: inline-block;
     border-right: black solid 1px;
     transition: margin-left .5s;
@@ -67,7 +68,7 @@ html, body {
 
 #display {
   position: relative;
-  width: 90%;
+  width: 94%;
   height: 100%;
   display: inline-block;
 }
