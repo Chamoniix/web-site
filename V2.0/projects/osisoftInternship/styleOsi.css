@@ -2,6 +2,23 @@ html, body {
     font-family: "Lato", sans-serif;
     height: 100%;
     width: 100%;
+    overflow: hidden;
+}
+
+.back {
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  margin-top: 15px;
+  border-radius: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  border: solid #3f3f3f 3px;
+  transition: 0.2s;
 }
 
 .sidenav {
@@ -28,6 +45,7 @@ html, body {
 
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
+    cursor: pointer;
 }
 
 .sidenav .closebtn {
@@ -47,9 +65,9 @@ html, body {
     padding: 16px;
 }
 
-.display {
+#display {
   position: relative;
-  width: 75%;
+  width: 90%;
   height: 100%;
   display: inline-block;
 }
