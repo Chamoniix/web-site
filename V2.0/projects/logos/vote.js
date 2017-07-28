@@ -47,18 +47,16 @@ y3 = localStorage.getItem("score3");
 y4 = localStorage.getItem("score4");
 y5 = localStorage.getItem("score5");
 
-document.getElementById("panelScore1").textContent = y1;
-document.getElementById("panelScore2").textContent = y2;
-document.getElementById("panelScore3").textContent = y3;
-document.getElementById("panelScore4").textContent = y4;
-document.getElementById("panelScore5").textContent = y5;
-
 var nbLogo = 5;
 var tab = [y1, y2, y3, y4,y5];
 var max=0;
-for (var i=0; i<nbLogo; i++)
-  if (tab[i]>max)
+var tmp;
+for (var i=0; i<nbLogo; i++) {
+  tmp = tab[i];
+  if (parseInt(max) < parseInt(tmp)) {
     max = tab[i];
+  }
+}
 var u = max%10;
 var ymax = (max - u) + 10;
 
