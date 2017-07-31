@@ -9,6 +9,7 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  min-width: 950px;
 }
 
 #blockPage {

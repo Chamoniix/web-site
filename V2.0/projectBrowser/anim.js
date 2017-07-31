@@ -5,7 +5,7 @@ var colors = ["#cd6155", "#ec7063", "#af7ac5", "#a569bd", "#5499c7",
 var num = ["un", "deux", "trois", "quatre", "cinq", "six", "sept",
   "huit", "neuf", "dix"];
 
-var r = 2; //Raw
+var r = 3; //Raw
 var c = 4; //Collumn
 
 for(var i = 0; i<r; i++) {
