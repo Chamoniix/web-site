@@ -1,2 +1,2 @@
-# web-site V2.0
+# web-site
 My website source code

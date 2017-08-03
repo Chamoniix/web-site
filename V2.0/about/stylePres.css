@@ -1,21 +1,33 @@
 body, html {
   width: 100%;
   font: 400 15px/1.8 "Lato", sans-serif;
-  background-color: #6f6f6f;
-  color: white;
+  color: #191919;
+}
+
+#container {
+  text-align: center;
+  background-color: rgba(243, 243, 245, 1);
+  width: 70%;
+  margin:auto;
+  margin-top:10%;
 }
 
 #caption {
-  display: inline-block;
-  margin: 10%;
+  margin: auto;
   border-radius: 50%;
   width: 20%;
+  margin-top: 10%;
 }
 
 #description {
+  width:80%;
+  margin: auto;
+  text-align: center;
   padding-top: 10%;
   vertical-align: top;
-  display: inline-block;
-  font-size: 1.5em;
-  letter-spacing: 1.5;
+}
+
+#description h1 {
+  font: normal normal normal 28px/1.4em 'open Sans';
+  letter-spacing: 0.05em;
 }
