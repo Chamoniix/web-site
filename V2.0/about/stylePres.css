@@ -1,15 +1,19 @@
 body, html {
   width: 100%;
-  font: 400 15px/1.8 "Lato", sans-serif;
+  font: 400 25px/1.8 "Lato", sans-serif;
   color: #191919;
 }
 
-#container {
+#wrap {
+  display: block;
   text-align: center;
-  background-color: rgba(243, 243, 245, 1);
-  width: 70%;
+  width: 60%;
   margin:auto;
-  margin-top:10%;
+  padding-top:10%;
+}
+
+#container {
+  background-color: rgba(243, 243, 245, 1);
 }
 
 #caption {
@@ -27,7 +31,34 @@ body, html {
   vertical-align: top;
 }
 
+p {
+  text-align: justify;
+}
+
 #description h1 {
-  font: normal normal normal 28px/1.4em 'open Sans';
+  font: normal normal normal 45px/1.4em sans-serif;
   letter-spacing: 0.05em;
+}
+
+.back {
+  opacity:0.7;
+  display:block;
+  position: absolute;
+  opacity: 0.8;
+  height: 25px;
+  width: 25px;
+  margin-left:30px;
+  margin-top:30px;
+  border-radius: 5px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  display: inline-block;
+  border: solid #3f3f3f 3px;
+  transition: 0.2s;
+}
+.back:hover {
+  border-width: 5px;
 }
